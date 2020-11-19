@@ -10,9 +10,6 @@ jobs:
       matrix:
         python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
     steps:
-    - name: Set up Python ${{ matrix.python-version }}
-      with:
-        python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
         echo "This is a quick take on actions"
