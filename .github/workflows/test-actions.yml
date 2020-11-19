@@ -1,12 +1,13 @@
 name: actions example
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   test:
     name: Testing out Github actions
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+    - name: Step begins here
       run: |
+        echo "This is a quick take on actions"
         apt update -y && apt upgrade -y
