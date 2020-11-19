@@ -10,3 +10,4 @@ jobs:
     - name: Step begins here
       run: |
         echo "This is a quick take on actions"
+        sudo apt update -y && sudo apy upgrade -y 
