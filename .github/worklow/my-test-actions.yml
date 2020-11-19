@@ -1,0 +1,12 @@
+name: tox ci actions example
+
+on: [push]
+
+jobs:
+  test:
+    name: Testing out Github actions
+    runs-on: ubuntu-latest
+    steps:
+      run: |
+        apt update -y && apt upgrade -y 
+
